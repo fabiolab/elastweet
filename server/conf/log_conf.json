@@ -1,0 +1,8 @@
+{
+    "level":"debug",
+    "dir":"./",
+    "log_file":"api-restes.log",
+    "exception_file":"api-restes-exceptions.log",
+    "max_size":100000,
+    "max_files":5
+}

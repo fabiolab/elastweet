@@ -1,0 +1,29 @@
+[
+    {
+        "name":"getMessagesByUser",
+        "path":"/getMessagesByUser/:user",
+        "method":"get",
+        "type":"message",        
+        "esQuery":{
+            "body":{
+                "query":{
+                     "match": {
+                        "user":"@user@"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name":"sendMessage",
+        "path":"/sendMessage",
+        "method":"post",
+        "type":"message"
+    },
+    {
+        "name":"deleteMessage",
+        "path":"/deleteMessage/:id",
+        "method":"delete",
+        "type":"message"
+    } 
+]

@@ -1,0 +1,9 @@
+<div>
+	<form role="form" ng-submit="sendTweet()">
+		<div class="form-group">
+			<textarea ng-model="tweet.message" class="form-control" rows="3"></textarea>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+		<span class="label label-success" ng-show="tweetOk">Success</span>
+	</form>
+</div>

@@ -1,0 +1,50 @@
+<html ng-app="elastweet"> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Open Source Tweeter based on ElasticSearch" >
+		<title>Elastweet</title>
+		<!-- Favicon !-->
+		<!-- <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon"> -->
+		<!-- <link rel="icon" href="resources/favicon.ico" type="image/x-icon"> -->
+		<!-- CSS !-->    
+			<!-- Latest compiled and minified CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/select2.css" rel="stylesheet">
+		<link href="css/select2-bootstrap.css" rel="stylesheet">
+			<!-- Project specifique file !-->
+		<link href="css/elastweet.css" rel="stylesheet">
+		<!-- Dependency  Libs !--> 
+			<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="vendor/jquery/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular/angular-sanitize.js"></script>
+		<script type="text/javascript" src="vendor/angular/ng-grid-2.0.7.min.js"></script>
+		<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-ui-select2/select2.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
+		<script type="text/javascript" src="vendor/elastic/elastic2.min.js"></script>
+		<script type="text/javascript" src="vendor/elastic/elastic-angular-client.min.js"></script>
+		<script type="text/javascript" src="vendor/elastic/elasticsearch.angular.min.js"></script>
+		<!-- Project specique files !-->
+			<!-- Conf file !-->
+		<script type="text/javascript" src="conf.js"></script>
+			<!-- Services and controllers -->
+		<script type="text/javascript" src="js/app.js"></script>			<script type="text/javascript" src="js/elastweet-api/services/elastweetApi.js"></script>
+		<script type="text/javascript" src="js/post/controllers/postCtrl.js"></script>
+
+
+			<!-- Conf !-->
+			<!-- Main Controller !-->
+		<script type="text/javascript" src="js/main/controllers/elastweetCtrl.js"></script>
+	</head>
+	<body>
+		<div ng-controller="elastweetCtrl">
+			<div ng-include="'partials/navbar.html'"></div>
+			<!-- Hello {{texte}} -->
+		</div>
+		<div ng-controller="postCtrl">
+			<div ng-include="'partials/postform.html'"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "port":"8070",
+    "elasticsearch":{
+		"host" : "localhost:9200",
+		"index" : "hermes",
+		"type" : "message"
+    }
+}
